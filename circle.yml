@@ -1,0 +1,21 @@
+machine:
+  python:
+    version:
+      3.5.2
+
+
+dependencies:
+  pre:
+    - pip install -r requirements.txt
+  override:
+    - pip install -e .
+  post:
+    - pip install pytest pytest-cov coveralls
+    - sudo apt install default-jre
+
+
+test:
+  override:
+    - pytest --cov-report html --cov=landchat
+  post:
+    - cp -r htmlcov $CIRCLE_ARTIFACTS/coverage

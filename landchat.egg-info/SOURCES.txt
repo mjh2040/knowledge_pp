@@ -1,0 +1,4 @@
+landchat.egg-info/PKG-INFO
+landchat.egg-info/SOURCES.txt
+landchat.egg-info/dependency_links.txt
+landchat.egg-info/top_level.txt

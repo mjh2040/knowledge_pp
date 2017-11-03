@@ -1,0 +1,10 @@
+pandas
+arrow
+pytest
+arrow
+flask
+flask-socketio
+lxml
+requests
+flask-sessionstore
+flask-sqlalchemy
